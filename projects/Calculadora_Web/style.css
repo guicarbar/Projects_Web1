@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #ece1c3;
+    --color2: #8ebdb6;
+    --color3: #3e838c;
+    --color4: #195e63;
+    --color5: #063940;
+}
+
+
+
+/* global */
+
+
+
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color5);
+}
+
+
+
+/* header */
+
+
+
+header {
+    background-color: var(--color4);
+    padding: 2em;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+
+
+/* footer */
+
+
+
+footer {
+    background-color: var(--color4);
+    padding: 2em;
+}
+
+footer>p {
+    text-align: center;
+}
+
+
+
+/* main */
+
+
+
+main {
+    margin: 3em 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 3em;
+    max-height: 696px;
+}
+
+.calculadora {
+    background-color: var(--color4);
+    padding: 2em;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px var(--color4);
+}
+
+.calculadora>hr {
+    margin: 1em 0px;
+}
+
+.screen {
+    background-color: var(--color1);
+    padding: 1em;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.calc, .result {
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.calc {
+    text-align: start;
+    height: 30px;
+    padding: 1em;
+    margin: 0px 0px 6px;
+}
+
+.result {
+    text-align: end;
+    height: 30px;
+    margin: 6px 24px 10px 0px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: x-large;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color2);
+}
+
+.btn-cst {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: x-large;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.btn-cst:hover {
+    background-color: var(--color1);
+    color: black;
+}
+
+
+.historico {
+    width: 350px;
+    background-color: var(--color1);
+    border: 4px solid gray;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.historico>h2 {
+    text-align: center;
+    color: black;
+    margin: 15px 0px 0px;
+}
+
+.historico>hr {
+    margin: 1em;
+}
+
+.historico>div {
+    max-width: 347px;
+    border: 4px solid gray;
+    margin: 1em;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.historico>div>p {
+    color: black;
+    margin: 4px 2em;
+    padding: 8px 1em;
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid transparent;
+}
+
+.historico>div>p:hover {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.historico>button {
+    padding: 10px 0px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--color3);
+    border-radius: 30px;
+    margin: 0px 4em;
+    border: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.historico>button:hover {
+    box-shadow: 0px 0px 15px var(--color3);
+}
