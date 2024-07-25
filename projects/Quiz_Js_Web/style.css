@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+
+
+/* ajustes */
+
+
+
+:root {
+    --color1: #eee45e;
+    --color2: #3ea3af;
+    --color3: #c91842;
+    --color4: #add6bc;
+    --color5: #79b7b4;
+}
+
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+
+
+/* header */
+
+
+
+header {
+    background-color: var(--color1);
+}
+
+header>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+}
+
+header>div {
+    border-top: 2px solid black;
+    padding: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+header>div>p:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 8px;
+}
+
+header>div>p:last-child {
+    margin: 0px 3em 0px 0px;
+    font-weight: bold;
+}
+
+
+
+/* footer */
+
+
+
+footer {
+    background-color: var(--color1);
+    text-align: center;
+    font-weight: bold;
+    padding: 2em;
+}
+
+
+
+/* main */
+
+
+
+main {
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--color5);
+    border-radius: 25px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+/* perguntas */
+
+
+
+.pergunta {
+    width: 67%;
+    border-radius: 25px;
+    margin: 0px 2em 0px 0px;
+    padding: 1em;
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.pergunta>h1 {
+    text-align: center;
+    margin: 8px 0px;
+}
+
+.pergunta>p {
+    margin: 2em 1em;
+    text-indent: 1em;
+    font-size: 20px;
+}
+
+.pergunta>ol>li {
+    margin: 1em 4em;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
+/* respostas */
+
+
+
+.resposta {
+    width: 30%;
+    padding: 1em;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 0px 15px white;
+}
+
+.resposta>div {
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.resposta>h1 {
+    text-align: center;
+    margin: 8px 0px;
+}
+
+.resposta>div>button {
+    padding: 1em;
+    margin: 1em;
+    border-radius: 25px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgb(241, 241, 157);
+    transition: all .3s ease;
+}
+
+.resposta>div>button:hover {
+    background-color: rgb(226, 226, 112);
+}
+
+
+
+/* start */
+
+
+
+.start {
+    width: 100%;
+}
+
+.start>div:first-child>h1 {
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.start>div:first-child>p {
+    text-indent: 1em;
+    margin: 1em auto;
+    max-width: 50%;
+}
+
+.start>div:last-child {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-110px);
+}
+
+.start>div:last-child>button {
+    padding: 3em 5em;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 25px;
+    background-color: var(--color3);
+    box-shadow: 0px 0px 20px var(--color3);
+    transition: all .3s ease-in;
+}
+
+.start>div:last-child>button:hover {
+    background-color: var(--color2);
+    box-shadow: 0px 0px 20px white;
+}
+
+
+
+/* vitoria */
+
+
+
+.vitoria {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.vitoria>h1, .vitoria>h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8px 0px ;
+}
+
+.vitoria>hr {
+    margin: 1em 0px;
+}
+
+.vitoria>p {
+    font-size: x-large;
+    text-align: center;
+    margin: 4px 0px;
+}
+
+
+
+/* derrota */
+
+
+
+.reiniciar {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.reiniciar>h1, .reiniciar>h2 {
+    margin: 8px 0px;
+}
+
+.reiniciar>hr {
+    width: 100%;
+}
+
+.reiniciar>button {
+    padding: 2em 4em;
+    background-color: var(--color3);
+    box-shadow: 0px 0px 15px var(--color3);
+    border-radius: 25px;
+    border: 0px;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.reiniciar>button:hover {
+    background-color: var(--color2);
+    box-shadow: 0px 0px 15px white;
+}

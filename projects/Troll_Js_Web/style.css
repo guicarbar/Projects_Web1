@@ -1,0 +1,460 @@
+@charset "UTF-8";
+
+/* 
+
+-570 ate 570 de width 
+
+-280 ate 280 heigth
+
+*/
+
+
+
+/* Root */
+
+
+
+:root {
+    --color1: #4e4d4a;
+    --color2: #353432;
+    --color3: #94ba65;
+    --color4: #2790b0;
+    --color5: #2b4e72;
+}
+
+
+
+/* ajustes */
+
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    min-height: 100vh;
+    background-color: var(--color2);
+}
+
+
+
+/* header */
+
+
+
+header {
+    background-color: var(--color5);
+    text-align: center;
+    padding: 2em;
+}
+
+header>h1 {
+    animation: magica 3.2s ease ;
+}
+
+@keyframes magica {
+    0% {
+        color: var(--color5);
+    }
+    100% {
+        color: white;
+    }
+}
+
+/* main */
+
+
+
+main {
+    margin: 2em auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main>div#main-screen{
+    position: relative;
+    width: 1300px;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: var(--color1);
+}
+
+/* footer */
+
+
+
+footer {
+    background-color: var(--color5);
+    padding: 3em;
+    text-align: center;
+}
+
+
+
+
+/* main troll */
+
+
+#buttonTp {
+    position: absolute;
+    padding: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .7s ease;
+}
+
+#buttonTp>button {
+    color: black;
+    background-color: var(--color3);
+    padding: 2em;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 0px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px var(--color3);
+    animation: pulse 1.6s infinite ease-in;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08) rotate(5deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* sobre troll */
+
+main>div:last-child {
+    position: relative;
+}
+
+main>div:last-child>div:first-child {
+    position: absolute;
+    background-color: transparent;
+    width: calc(100% - 6em);
+    height: calc(100% - 6em);
+    margin: 3em;
+    padding: 1.5em;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+main>div:last-child>div:last-child {
+    max-width: 750px;
+    margin: 3em;
+    padding: 1.5em;
+    border-radius: 25px;
+    background-color: var(--color1);
+}
+
+main>div:last-child>div>h1 {
+    text-align: center;
+}
+
+main>div:last-child>div>p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+
+
+/* main timer troll */
+
+
+
+.timer-troll {
+    width: 1300px;
+    height: 700px;
+    border-radius: 30px;
+}
+
+.timer-troll>h2, .timer-troll>p, .timer-troll>hr {
+    text-align: center;
+    margin: 1em 2em;
+}
+
+.timer-troll>h2 {
+    text-transform: uppercase;
+    margin: 2em 0px 0px;
+}
+
+.timer-troll>div {
+    background-color: var(--color2);
+    width: 1000px;
+    height: 20px;
+    margin: 5em auto;
+    border-radius: 30px;
+    border: 1px solid var(--color3);
+    box-shadow: 0px 0px 10px var(--color3);
+    position: relative;
+}
+
+.timer-troll>div::before {
+    width: 0px;
+    height: 100%;
+    background-color: var(--color3);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    animation: carregar 6.8s ease-in-out .3s forwards, carregarT 2.4s ease 8.8s infinite;
+}
+
+@keyframes carregar {
+    0% {
+        width: 0px;
+        content: "Loading";
+        color: transparent;
+    }
+    25% {
+        width: 200px;
+        content: "Loading";
+        color: black;
+    }
+    50% {
+        width: 500px;
+        content: "Loading";
+        color: black;
+    }
+    75% {
+        width: 600px;
+        content: "Loading";
+        color: black;
+    }
+    100% {
+        width: 800px;
+        content: "Loading";
+        color: black;
+    }
+}
+
+@keyframes carregarT {
+    0% {
+        width: 800px;
+        content: "Loading";
+        color: black;
+    }
+    40% {
+        width: 800px;
+        content: "Loading.";
+        color: black;
+    }
+    70% {
+        width: 800px;
+        content: "Loading..";
+        color: black;
+    }
+    100% {
+        width: 800px;
+        content: "Loading...";
+        color: black;
+    }
+}
+
+.timer-troll>button {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.5em;
+    border-radius: 30px 0px 0px 0px;
+    cursor: pointer;
+    background-color: #94ba654b;
+    border: 0px;
+    box-shadow: 0px 0px 10px #94ba654b;
+}
+
+
+
+/* troll cronometro */
+
+
+
+.cronometro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cronometro>h1 {
+    font-size: 200px;
+    color: red;
+    text-shadow: 0px 0px 15px red;
+}
+
+
+
+/* troll tela de passou */
+
+
+
+#passou>h1 {
+    text-align: center;
+    margin: 1.5em 0px;
+}
+
+#passou>hr {
+    margin: 0px 2em;
+}
+
+#passou>p {
+    text-align: center;
+    margin: 1.5em 0px;
+}
+
+#passou>div.box {
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-30deg);
+    animation: girando 3.2s infinite ease;
+}
+
+#passou>div.box>div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(43, 78, 114, 0.500);
+    border: 16px solid #2790b0; 
+}
+
+.box>div.front {
+    transform: translateZ(100px);
+}
+
+.box>div.back {
+    transform: rotateX(180deg) translateZ(100px);
+}
+
+.box>div.left {
+    transform: rotateY(270deg) translateZ(100px);
+    cursor: pointer;
+}
+
+.box>div.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.box>div.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.box>div.botton {
+    transform: rotateX(270deg) translateZ(100px);
+}
+
+@keyframes girando {
+    0% {
+        transform: rotateX(-30deg) rotateY(-30deg);
+    }
+    50% {
+        transform: rotateX(-330deg) rotateY(-330deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(-30deg);
+    }
+}
+
+@keyframes piscando {
+    0% {
+        background-color: rgba(43, 78, 114, 0.500);
+        border: 16px solid #2790b0; 
+    }
+    50% {
+        background-color: rgba(114, 43, 43, 0.5);
+        border: 16px solid #b02727; 
+    }
+    100% {
+        background-color: rgba(43, 78, 114, 0.500);
+        border: 16px solid #2790b0; 
+    }
+}
+
+
+
+/* tela final do game */
+
+
+
+.final>h1 {
+    text-align: center;
+    margin: 1.5em 0px;
+}
+
+.final>hr {
+    margin: 0px 2em;
+}
+
+.final>p {
+    text-align: center;
+    margin: 2em 0px;
+}
+
+
+
+.screen-small {
+    display: none;
+    background-color: var(--color1);
+    border-radius: 25px;
+    margin: 2em;
+    padding: 2em;
+}
+
+
+.screen-small>h2 {
+    text-align: center;
+}
+
+.screen-small>p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.screen-small>p:last-child {
+    text-align: center;
+}
+
+.screen-small>hr {
+    margin: 2em 0px;
+}
+
+.screen-small>h3 {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+    .screen-small {
+        display: block;
+    }
+
+    main>div#main-screen {
+        display: none;
+    }
+}
+

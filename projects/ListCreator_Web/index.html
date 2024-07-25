@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Lista Creator</title>
+</head>
+<body>  
+    <header>
+        <h1>Lista Creator</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Lista</h2>
+
+            <div class="lista" id="lista"></div>
+            
+            <form onsubmit="criar(event)">
+                <input type="text" id="input" maxlength="32">
+                <button type="submit">Criar</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Sobre</h2>
+            <hr>
+            <p>
+                Um site para a criação de listas doque precisar. Aproveite o site e teste fazendo suas compras.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Criado por Guilherme Carvalho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

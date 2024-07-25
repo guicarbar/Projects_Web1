@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #0c0636;
+    --color2: #095169;
+    --color3: #059b9a;
+    --color4: #53ba83;
+    --color5: #9fd86b;
+}
+
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+header {
+    background-color: var(--color5);
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color5);
+    padding: 1em;
+}
+
+footer>p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main>div:first-child {
+    background-color: var(--color1);
+    margin: 80px 0px 0px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 90vw;
+}
+
+main>div:first-child>h2 {
+    text-align: center;
+    margin: 10px 0px;
+    color: white;
+    text-transform: uppercase;
+}
+
+main>div:last-child {
+    margin: 1em;
+    background-color: var(--color5);
+    padding: 1em;
+    border-radius: 30px;
+}
+
+main>div:last-child>h2 {
+    text-align: center;
+}
+
+main>div:last-child>hr {
+    margin: 1em 0px;
+}
+
+div.lista {
+    height: 350px;
+    border-radius: 25px;
+    margin: 0px 0px 1em;
+    background-color: var(--color2);
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+form>input {
+    width: 150px;
+    padding: 10px 1em;
+    border-radius: 20px;
+    border: 2px solid var(--color4);
+    cursor: pointer;
+    background-color: var(--color4);
+    transition: all .3s ease;
+}
+
+form>input:hover {
+    background-color: var(--color5);
+}
+
+form>button {
+    padding: 10px 2em;
+    background-color: var(--color5);
+    border: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+form>button:hover {
+    background-color: var(--color4);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color5);
+    border-radius: 30px;
+    height: 50px;
+}
+
+.item>p {
+    font-weight: bold;
+    padding: 10px 16px;
+}
+
+
+.item>button {
+    border-radius: 0px 30px 30px 0px;
+    border: 0px;
+    padding: 0px 1em;
+    cursor: pointer;
+    height: 50px;
+    background-color: red;
+}
+
+.item>button>span {
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    main>div:first-child {
+        max-width: 80vw;
+    }
+
+    div.lista {
+        height: 500px;
+        flex-flow: column wrap;
+        gap: 10px;
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main>div:first-child {
+        max-width: 70vw;
+    }
+
+    div.lista {
+        height: 650px;
+        flex-flow: column wrap;
+        gap: 10px;
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main>div:first-child {
+        max-width: 50vw;
+    }
+
+    div.lista {
+        height: 700px;
+        flex-flow: column wrap;
+        gap: 10px;
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main>div:first-child {
+        max-width: 40vw;
+    }
+
+    div.lista {
+        height: 600px;
+        flex-flow: column wrap;
+        gap: 10px;
+        overflow-x: auto;
+    }
+}
