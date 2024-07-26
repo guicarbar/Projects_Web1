@@ -47,6 +47,13 @@ Este é um site de pegadinhas criado para trollar o usuário com algumas brincad
 [Troll_Js_Web](Projects/Troll_Js_Web/index.html)
 
 
+### NewsGCB_Web
+
+Este é meu primeiro projeto utilizando a Shadow DOM e orientação a objetos em JavaScript. Trata-se de um site de notícias com a componentização dos cards de notícia usando a Shadow DOM.
+
+
+[NewsGCB_Web](Projects/NewsGCB_Web/index.html)
+
 ## Comentarios :phone:
 
 Este repositório, como um todo, pode ser constantemente evoluído como forma de praticar minhas habilidades nessas tecnologias. No entanto, meu foco principal no momento em que estou escrevendo este comentário (25/07) é aprender outras tecnologias e criar projetos mais avançados. Por isso, este repositório pode ficar um tempo sem ser atualizado.
