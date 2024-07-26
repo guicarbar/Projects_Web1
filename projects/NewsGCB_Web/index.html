@@ -11,7 +11,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+    <script src="components/carrousel.js" defer></script>
+    <script src="components/news.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,12 +43,10 @@
                 <h2>Principais noticias</h2>
             </section>
 
-            <div>
-                <h3>Noticia 1</h3>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consectetur 
-                </div>
-            </div>
+            <carrousel-item
+                titulo="ola mundo"
+                conteudo="bla bla bla bla bla bla bla bla bla ..."
+            ></carrousel-item>
         </div>
 
         <div class="news">
@@ -59,19 +59,12 @@
             </section>
 
             <div class="bloco-news">
-                <div>
-                    <div>
-                        <span class="material-symbols-outlined">person</span>
-                        <span>Guilherme carvalho</span>
-                    </div>
-    
-                    <h2>noticia teste</h2>
-    
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic nulla vitae velit nam magni labore dolorem fuga, nemo iste quis officiis, exercitationem, repellat expedita totam impedit consectetur molestiae ipsa.
-                    </p>
-                </div>
-                
+
+                <card-news
+                    tituloNews="Noticia 1"
+                    conteudoNews="bla bla bla bla bla"
+                ></card-news>
+
             </div>
         </div>
 
