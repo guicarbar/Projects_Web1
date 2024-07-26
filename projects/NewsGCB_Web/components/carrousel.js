@@ -28,10 +28,9 @@ class carrousel extends HTMLElement {
         var style = document.createElement('style')
         style.textContent = `
             .itemCarrousel {
-                background-image: url('img/Pc1.png');
+                background-image: url('img/Pc.png');
                 background-position: center center;
                 background-size: cover;
-                margin: 2em auto;
                 width: 100%;
                 height: 300px;
                 display: flex;
@@ -45,7 +44,7 @@ class carrousel extends HTMLElement {
                 margin: 1em 0px 0px;
                 padding: 1em 3em;
                 text-align: center;
-                backdrop-filter: blur(10px);
+                background-color: var(--color2);
                 border-radius: 30px;
                 color: var(--color5);
                 font-weight: 800;

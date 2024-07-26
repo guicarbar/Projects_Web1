@@ -51,6 +51,8 @@ class news extends HTMLElement {
             .conteudo {
                 text-indent: 1em;
             }
+
+
         `
 
         return style

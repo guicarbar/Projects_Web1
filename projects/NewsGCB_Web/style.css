@@ -142,22 +142,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* carrousel */
 
 
@@ -176,6 +160,12 @@ main {
     padding: 10px;
 }
 
+.blockCarroseul {
+    margin: 2em auto;
+}
+
+
+
 /* noticias */
 
 
@@ -188,26 +178,7 @@ main {
     margin: 10px;
 }
 
-.bloco-news>div {
-    border: 2px solid var(--color1);
-    box-shadow: 10px 10px 15px var(--color1);
-    border-radius: 30px;
-    padding: 1em;
-    margin: 10px;
-}
 
-.bloco-news>div>div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: gray;
-    margin: 0px 20px;
-}
-
-.bloco-news>div>h2 {
-    margin: 10px 10px;
-}
-
-.bloco-news>div>p {
-    text-indent: 1em;
+.bloco-news {
+    margin: 2em 0px;
 }
